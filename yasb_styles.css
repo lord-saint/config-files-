@@ -1,3 +1,4 @@
+
 :root {
     --mauve: #cba6f7;
     --red: #f38ba8;
@@ -25,8 +26,10 @@
 .icon {
     font-size: 15px;
 }
+
+/* widget */
 .widget {
-    padding: 0 4px;
+    padding: 1px 1px;
     margin: 0;
     transition: all 0.2s ease;
 }
@@ -539,3 +542,44 @@
 .active-window-widget .label-icon {
     margin-right: 0px;
 }
+
+/*WALLPAPERS GALLERY*/
+.wallpapers-gallery-window {
+    background-color: var(--black);
+}
+.wallpapers-gallery-buttons {
+    font-size: 12px;
+    font-family: 'JetBrainsMono NFP';
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 14px;
+    padding: 8px 0;
+    margin:0 8px 8px 8px;
+    width: 600px;
+    border-radius: 0px;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color:#e5e7ebd0;
+}
+.wallpapers-gallery-image {
+    border: 4px solid transparent;
+}
+.wallpapers-gallery-image:hover {
+    border: 3px solid var(--hover);
+}
+.wallpapers-gallery-image.focused {
+}   
+
+/* brightness */
+.brightness-menu {
+    background-color:rgba(17, 17, 27, 0.4); 
+}
+.brightness-slider {
+    border: none;
+}
+.brightness-slider::groove {}
+.brightness-slider::handle{} 
+
+/* Brightness progress bar styles if enabled */
+.brightness-widget .progress-circle {} 
+
