@@ -6,21 +6,21 @@
     --blue: #448fff;
     --lavender: #b4befe;
     --pink: #ff8cb4;
-    --text1: #ffffff;
-    --text2: #c4c0d0;
+    --text1: #e7d8d8;
+    --text2: #ffffff;
     --text3: #9399b2;
     --text4: #7f849c;
 }
 * {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text1);
-    font-weight: 700;
+    font-weight: 600;
     font-family: "JetBrainsMono NFP", "Segoe UI", sans-serif;
 }
 .yasb-bar {
-    background-color:#0000006e;
+    background-color:#00000072;
     border-radius: 1px;
-    border: 2px solid rgba(255, 253, 253, 0.166);
+    border: 1px solid rgba(255, 255, 255, 0);
     backdrop-filter: blur(100px) saturate(1.2s);
 }
 .icon {
@@ -29,7 +29,7 @@
 
 /* widget */
 .widget {
-    padding: 1px 1px;
+    padding: 1.5px 1.5px;
     margin: 0;
     transition: all 0.2s ease;
 }
@@ -107,13 +107,13 @@
     font-size: 18px;
 }
 .microphone-widget .icon {
-    color: var(--white);
+    color: var(--text1);
 }
 
 /* voulme */
 .volume-widget .icon {
     font-size: 17px;
-    color: var(--white);
+    color: var(--text1);
     margin: 0px 2px 0 0;
 }
 .volume-widget {
@@ -254,7 +254,7 @@
     font-size: 14px;
 }
 .notification-widget .icon.new-notification {
-    color: var(--white);
+    color: var(--text1);
 }
 
 /* calender */
@@ -274,8 +274,8 @@
     outline: none;
 }
 .calendar .calendar-table::item:selected {
-    color: #000000;
-    background-color: var(--blue);
+    color: #ffffff;
+    background-color: #0000004c;
     border-radius: 10px;
 }
 .calendar .day-label {
@@ -508,8 +508,8 @@
     box-shadow: 0 4px 8px rgba(59, 95, 124, 0.3);
 }
 .taskbar-widget .app-container.foreground {
-    background-color: rgba(59, 95, 124, 0.4);
-    border: 1px solid rgba(100, 150, 180, 0.5);
+    background-color: rgba(70, 67, 67, 0.715);
+    border: 1px solid rgba(88, 95, 100, 0.5);
     min-height: 24px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(74, 111, 138, 0.4);
