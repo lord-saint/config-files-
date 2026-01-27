@@ -13,12 +13,12 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: '4px'
+  inner_gap: '5px'
   outer_gap:
-    top: '0x'      
-    right: '0px'
-    bottom: '0px'
-    left: '0px'
+    top: '5x'      
+    right: '5px'
+    bottom: '5px'
+    left: '5px'
 
 window_effects:
   focused_window:
@@ -178,8 +178,11 @@ keybindings:
     bindings: ['alt+shift+enter']
   - commands: ['shell-exec explorer']  # File Explorer
     bindings: ['alt+e']
-  - commands: ['shell-exec brave']  # Browser (change to your preferred)
+  - commands: ['shell-exec brave']  # Browser (change to your preferred) 
     bindings: ['alt+b']
+  - commands: ['shell-exec --hide-window code']
+    bindings: ['alt+c']
+
 
   # Workspace Navigation
   - commands: ['focus --next-active-workspace']
