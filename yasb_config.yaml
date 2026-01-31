@@ -83,7 +83,7 @@ bars:
   #     always_on_top: false
   #     windows_app_bar: true
   #     hide_on_fullscreen: true
-  #   dimensions:
+  #   dimensions:q
   #     width: "100%"
   #     height: 32
   #   padding:
@@ -490,9 +490,9 @@ widgets:
       change_automatically: false
       update_interval: 60
       animation:
-        enabled: false
+        enabled: true
         type: 'fadeInOut'
-        duration: 200      
+        duration: 60      
       gallery:
         enabled: true
         blur: true
@@ -558,4 +558,5 @@ widgets:
             on_left: "exec start_menu"
             on_right: "exec start_menu"
             on_middle: "exec start_menu"
+
 
