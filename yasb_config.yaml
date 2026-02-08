@@ -34,20 +34,15 @@ bars:
       right: 0
     widgets:
       left:
-      - "lines"
       - "win_button"
-      - "lines"
       - "glazewm_workspaces"
       - "glazewm_tiling_direction"
-      # - "active_window"
       - "lines"
       - "taskbar"
       - "lines"      
       - "traffic"
       center:
-      - "lines"
       - "clock"
-      - "lines"
       right:
       - "media"
       - "lines"
@@ -57,7 +52,7 @@ bars:
       - "lines"
       - "microphone"
       - "volume"
-      - "brightness"
+      #- "brightness"
       - "notifications"
       - "lines"
       - "Battery"
@@ -102,8 +97,8 @@ widgets:
       label: "{title}"
       label_alt: "{artist} - {title}"
       max_field_size:
-        label: 16
-        label_alt: 24
+        label: 10
+        label_alt: 20
       show_thumbnail: true
       controls_only: false
       controls_left: true
@@ -159,8 +154,8 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%A, %d %B %Y %H:%M}"
-      label_alt: "{%a, %d %b %H:%M}"
+      label: "|{%A, %d %B %Y %H:%M}|"
+      label_alt: "|{%a, %d %b %H:%M}|"
       timezones: []
       calendar: 
         blur: false
@@ -361,8 +356,8 @@ widgets:
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-      label: "<span>\uf4bc</span> {virtual_mem_free}/{virtual_mem_total}"
-      label_alt: "<span>\uf4bc</span>:{virtual_mem_percent}%"
+      label: "|<span>\uf4bc</span> {virtual_mem_free}/{virtual_mem_total}|"
+      label_alt: "|<span>\uf4bc</span>:{virtual_mem_percent}%|"
       update_interval: 5000
       callbacks:
         on_left: "toggle_label"
@@ -551,12 +546,10 @@ widgets:
   win_button:
         type: "yasb.custom.CustomWidget"
         options:
-          label: "\ue62a"
-          label_alt: "\ue62a"
+          label: "(◉)"
+          label_alt: "(◉)"
           class_name: "system-widget"
           callbacks:
             on_left: "exec start_menu"
             on_right: "exec start_menu"
             on_middle: "exec start_menu"
-
-
