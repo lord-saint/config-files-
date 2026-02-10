@@ -5,8 +5,8 @@
     --blue: #448fff;
     --lavender: #b4befe;
     --pink: #ff8cb4;
-    --text1: #e7d8d8;
-    --text2: #ffffff;
+    --text1: #ffffff;
+    --text2: #020202;
     --text3: #9399b2;
     --text4: #7f849c;
 }
@@ -17,9 +17,9 @@
     font-family: "JetBrainsMono NFP", "Segoe UI", sans-serif;
 }
 .yasb-bar {
-    background-color:#00000072;
+    background-color:rgba(0, 0, 0, 0.415);
     border-radius: 1px;
-    border: 1px solid rgba(255, 255, 255, 0);
+    border: 1px solid rgb(0, 0, 0);
     backdrop-filter: blur(100px) saturate(1.2s);
 }
 .icon {
@@ -42,9 +42,9 @@
 
 /* power menue */
 .power-menu-widget .label {
-    color: #ffffff;
+    color: var(--text1);
     font-size: 15px;
-    padding: 0px 0px;
+    padding: 1px 1px;
 }
 .power-menu-popup {
     background-color: transparent
@@ -333,7 +333,7 @@
 /* wifi */
 .wifi-menu {
     font-family: 'Segoe UI';
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(65, 63, 63, 0.541);
     max-height: 350px;
     min-height: 375px;
     min-width: 375px;
@@ -350,9 +350,9 @@
     font-weight: 600;
     margin-bottom: 2px;
     padding: 12px;
-    background-color: rgba(17, 17, 27, 0.6);
+    background-color: rgba(65, 63, 63, 0.541);
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(65, 63, 63, 0.541);
 }
 .wifi-menu .error-message {
     font-family: 'Segoe UI';
@@ -545,7 +545,7 @@
 
 /*WALLPAPERS GALLERY*/
 .wallpapers-gallery-window {
-    background-color: var(--black);
+    background-color: rgba(65, 63, 63, 0.541);
 }
 .wallpapers-gallery-buttons {
     font-size: 12px;
