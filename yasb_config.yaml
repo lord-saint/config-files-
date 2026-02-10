@@ -47,7 +47,7 @@ bars:
       - "media"
       - "lines"
       - "wifi"
-      - "bluetooth"
+      #- "bluetooth"
       - "wallpapers"
       - "lines"
       - "microphone"
@@ -216,12 +216,11 @@ widgets:
       blur: true
       blur_background: true
       animation_duration: 0
-      button_row: 5
+      button_row: 4
       buttons:
         shutdown: ["\uf011", "Shut Down"]
         restart: ["\uead2", "Restart"]
         signout: ["\udb80\udf43", "Sign out"]
-        hibernate: ["\uf28e", "Hibernate"]
         sleep: ["\u23fe", "Sleep"]
         cancel: ["", "Cancel"]
       label_shadow:
